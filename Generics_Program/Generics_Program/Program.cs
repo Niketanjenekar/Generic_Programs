@@ -14,17 +14,10 @@ namespace Generics_Program
 
             //******************************Day-13 Assignments******************************
 
-            Console.WriteLine("1. Find the Maximum Number Between Three Integers");
-            int option = Convert.ToInt32(Console.ReadLine());
-
             FindMaximum findMaximum = new FindMaximum();
-            switch (option)
-            {
-                case 1:
-                    findMaximum.FindingMaximum(25, 99, 45);
-                    break;
+            
+            findMaximum.FindingMaximum(3.14f, 6.2f, 1.9f);
 
-            }
             Console.ReadLine();
         }
     }

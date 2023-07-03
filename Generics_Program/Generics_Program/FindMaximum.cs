@@ -8,9 +8,9 @@ namespace Generics_Program
 {
     public class FindMaximum
     {
-        public void FindingMaximum(int a, int b, int c)
+        public void FindingMaximum(float a, float b, float c)
         {
-            if(a.CompareTo(b) > 0  && a.CompareTo(c) >0)
+            if(a.CompareTo(b) > 0  && a.CompareTo(c) > 0)
             {
                 Console.WriteLine("The First Value " + a + "  is The Greatest Value");
             }
