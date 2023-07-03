@@ -16,7 +16,7 @@ namespace Generics_Program
 
             FindMaximum findMaximum = new FindMaximum();
             
-            findMaximum.FindingMaximum(3.14f, 6.2f, 1.9f);
+            findMaximum.FindingMaximum("Apple", "Peach", "Banana");
 
             Console.ReadLine();
         }
