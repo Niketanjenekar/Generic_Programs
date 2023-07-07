@@ -6,22 +6,27 @@ using System.Threading.Tasks;
 
 namespace Generics_Program
 {
-    public class FindMaximum
+    public class FindMaximum<T> where T : System.IComparable<T>
     {
-        public void FindingMaximum(string a, string b, string c)
+        public T FindingMaximum(T firstVal, T secondVal, T thirdVal)
         {
-            if(a.CompareTo(b) > 0  && a.CompareTo(c) > 0)
+            T maxVal = firstVal;
+            if(maxVal.CompareTo(secondVal) > 0  && maxVal.CompareTo(thirdVal) > 0)
             {
-                Console.WriteLine("The First Value " + a + "  is The Greatest Value");
+                return maxVal;
             }
-            else if(b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+            else if(secondVal.CompareTo(maxVal) > 0 && secondVal.CompareTo(thirdVal) > 0)
             {
-                Console.WriteLine("The Second Value " + b + "  is Greatest Value");
+                maxVal = secondVal;
             }
             else
             {
-                Console.WriteLine("The Third Value " + c + "  is the Greatest Value");
+                maxVal = thirdVal;
             }
+            return maxVal;
+            
         }
+
+        
     }
 }
