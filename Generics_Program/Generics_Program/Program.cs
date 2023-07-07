@@ -14,20 +14,20 @@ namespace Generics_Program
 
             //******************************Day-13 Assignments******************************
 
-            FindMaximum<int> intMax = new FindMaximum<int>();            
-            int maxVal = intMax.FindingMaximum(2, 5, 7);
+            FindMaximum<int> intMax = new FindMaximum<int>(2, 5, 7);            
+            int maxVal = intMax.FindMax();
             Console.WriteLine("The Maximum Value " + maxVal + "  is The Greatest Integer Value");
 
             Console.WriteLine("*********************************");
 
-            FindMaximum<string> stringMax = new FindMaximum<string>();
-            string maxString = stringMax.FindingMaximum("apple" , "mango" , "peach");
+            FindMaximum<string> stringMax = new FindMaximum<string>("apple", "mango", "peach");
+            string maxString = stringMax.FindMax();
             Console.WriteLine("The Maximum Value " + maxString + "  is The Greatest String");
             
             Console.WriteLine("*********************************");
             
-            FindMaximum<double> doubleMax = new FindMaximum<double>();
-            double maxDouble = doubleMax.FindingMaximum(1.2, 3.5, 5.45);
+            FindMaximum<double> doubleMax = new FindMaximum<double>(1.2, 3.5, 5.45);
+            double maxDouble = doubleMax.FindMax();
             Console.WriteLine("The Maximum Value " + maxDouble + "  is The Greatest Double Value");
             
             Console.WriteLine("*********************************");
